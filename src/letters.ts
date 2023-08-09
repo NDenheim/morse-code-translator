@@ -2,11 +2,6 @@ export type letterPair = {
   [key: string]: string;
 };
 
-// export const translation: letterPair = {
-//   english: "a",
-//   morse: ".-",
-// };
-
 export const englishToMorse: letterPair = {
   a: ".-",
   b: "-...",
