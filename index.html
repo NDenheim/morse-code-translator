@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse Code</title>
+  </head>
+  <body>
+    <h1>Morse Code Translator</h1>
+    <p>Welcome! Type in English to translate to Morse Code</p>
+
+    <form class="english" action="">
+      <label class="english__label" for="English Input">English</label>
+      <input class="text-field" id="english__input" type="text" />
+      <button class="english__submit" type="submit">Submit</button>
+      <!-- <input class="english__submit" type="button" /> -->
+    </form>
+
+    <form class="morse" action="">
+      <label class="morse__label" for="Morse Output">Morse Code</label>
+      <input class="text-field" id="morse__output" type="text" />
+    </form>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

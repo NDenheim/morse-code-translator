@@ -1,0 +1,18 @@
+form {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 7vw;
+
+  .text-field {
+    height: 20vh;
+    width: 50vw;
+    text-align: start;
+    font-size: 4vw;
+  }
+
+  .morse__output {
+    pointer-events: none;
+  }
+}
