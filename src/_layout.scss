@@ -1,18 +1,104 @@
-form {
+body {
   margin: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 7vw;
+  background-color: rgb(249, 245, 224);
 
-  .text-field {
-    height: 20vh;
-    width: 50vw;
-    text-align: start;
-    font-size: 4vw;
+  h1 {
+    font-size: 14vw;
+    margin: 30px 0;
+    color: rgb(57, 111, 211);
   }
 
-  .morse__output {
-    pointer-events: none;
+  p {
+    font-size: 5vw;
+  }
+
+  form {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4vw;
+
+    .text-field {
+      height: 10vh;
+      width: 100%;
+      text-align: start;
+      font-size: 20px;
+      margin: 20px 0;
+      padding: 0 2vw;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .english {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20%;
+
+    &__submit {
+      grid-column: 2/3;
+      width: 40%;
+      height: 5vh;
+      font-size: 15px;
+      //   margin: 0 0 0 auto;
+      background-color: rgb(57, 111, 211);
+      color: rgb(249, 245, 224);
+    }
+  }
+
+  .morse {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 30px;
+
+    h1 {
+      font-size: 8vw;
+    }
+
+    p {
+      font-size: 3vw;
+    }
+
+    form {
+      margin: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 5vw;
+
+      .text-field {
+        // height: 10vh;
+        width: 100%;
+        text-align: start;
+        font-size: 28px;
+        margin: 20px 0;
+        padding: 0 2vw;
+        overflow-wrap: break-word;
+      }
+    }
+
+    .english {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 80% 20%;
+
+      &__submit {
+        grid-column: 2/3;
+        width: 40%;
+        height: 5vh;
+        font-size: 20px;
+        //   margin: 0 0 0 auto;
+      }
+    }
+
+    .morse {
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
   }
 }

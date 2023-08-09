@@ -3,10 +3,10 @@ import { englishToMorse } from "./letters";
 
 const englishInput = document.querySelector(
   "#english__input"
-) as HTMLInputElement;
+) as HTMLTextAreaElement;
 const morseOutput = document.querySelector(
   "#morse__output"
-) as HTMLInputElement;
+) as HTMLTextAreaElement;
 
 const englishSubmit = document.querySelector(
   ".english__submit"

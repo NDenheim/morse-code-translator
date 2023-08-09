@@ -12,15 +12,21 @@
 
     <form class="english" action="">
       <label class="english__label" for="English Input">English</label>
-      <input class="text-field" id="english__input" type="text" />
-      <button class="english__submit" type="submit">Submit</button>
+      <textarea class="text-field" id="english__input" type="text"></textarea>
+      <button class="english__submit">Submit</button>
       <!-- <input class="english__submit" type="button" /> -->
     </form>
 
     <form class="morse" action="">
       <label class="morse__label" for="Morse Output">Morse Code</label>
-      <input class="text-field" id="morse__output" type="text" />
+      <textarea
+        class="text-field"
+        id="morse__output"
+        type="text"
+        disabled="disabled"
+      ></textarea>
     </form>
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
 
     <script type="module" src="/src/main.ts"></script>
   </body>
